@@ -1,11 +1,12 @@
-import BasicButtonGroup from './components/buttons/buttongroup.component';
+
 import './App.css';
+import PortfolioContainer from './components/portfoliocontainer';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
     <div className="App theme">
-      <p>hello world</p>
-      <BasicButtonGroup />
+      <PortfolioContainer />
     </div>
   );
 }

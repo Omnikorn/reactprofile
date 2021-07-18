@@ -1,0 +1,18 @@
+#but1{
+    background-color: dimgray;
+    border-left: 5px;
+    border-color: black;
+    margin-right: 1%;
+}
+
+
+#but2{
+    background-color: dimgray;
+    border-right: 5px;
+    border-color: black;
+}
+
+
+.manycards{
+    margin-top: 2%;
+}
