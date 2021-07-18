@@ -30,9 +30,33 @@ const Work = () => {
 			image:require("./images/Me_Purple.jpg").default,
 			info: "This is a MERN full stack application aimed to simplify the wedding planning process. Couples can enter their wedding details including dates, venue and menu details and generate an electronic email list of their guests who will receive an email of these details. The guests can then log in to the “wedding” on our application to RSVP and confirm their menu choice.",
 		},
+		{
+			name: "The Micro Blog site",
+			id: 4,
+			deployedLink: "https://tblog2.herokuapp.com/",
+			repoLink: "https://github.com/Omnikorn/Micro_Blog_v2",
+			image:require("./images/micro-blog.png").default,
+			info: "This is a simple blogging app build using node, express, handlebars with a MYSQL database to store and retrieve blog posts. A user is presented with a log in / sig up screen where they can create or log in into their account. Once logged in, the user is taken to the home page where they can view all posts posted by other users . when a user clicks on a post they are taken to a post screen where they can see all comments related to that post and they have the ability to comment themselves. On the users own dashboard the user can create a new post or edit and delete their current posts. The app is hosted on a Heroku serve with the posts and comments MYSQL database being hosted on a JAWdb server.",
+		},
+		{
+			name: "The Weather Dashboard",
+			id: 5,
+			deployedLink: "https://omnikorn.github.io/WeatherApp/",
+			repoLink: "https://github.com/Omnikorn/WeatherApp",
+			image:require("./images/weatherapp.png").default,
+			info: "This is a weather dashboard built using HTML, JavaScript and CSS. The main search function is powered by open-weather 5day forecast API which supports city name search. This API returns the 5-day forecast and it also returns the latitude and longitude coordinates for the searched city. These are then fed into a new function to generate a second API search (one call API) from open weather that returns the current weather conditions including the UV index",
+		},
+		{
+			name: "The Online/Offline Budget Tracker",
+			id: 6,
+			deployedLink: "https://harith-budget-tracker.herokuapp.com/",
+			repoLink: "https://github.com/Omnikorn/budget_tracker",
+			image:require("./images/budget.png").default,
+			info: "This is a simple progressive web application designed with the world traveller in mind. It is designed to work offline during periods of internet outage where a user can still enter their information (i.e expenses) to be stored locally then to be uploaded to the main database when the user next connect online",
+		}
 	])
 	return (
-		<Row xs={1} md={2} className="g-4">
+		<Row xs={1} md={3} className="g-4">
 			{/* {Array.from({ length: 4 }).map((_, idx) => ( */}
 			{projects.map((project) => (
 				
