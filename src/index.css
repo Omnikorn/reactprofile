@@ -12,4 +12,12 @@ code {
     monospace;
 }
 
+@font-face {
+  font-family: 'pwperspectivemedium';
+  src: url('./font/pwperspective-webfont.woff2') format('woff2'),
+       url('./font/pwperspective-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 

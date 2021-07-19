@@ -1,105 +1,62 @@
-import React from "react"; 
-import { useForm } from "react-hook-form";
+import { blue } from "@material-ui/core/colors"
+import React from "react"
+import emailjs from "emailjs-com"
 
-const Contact =() =>{
+const Contact = () => {
 
-const {register, errors, handleSubmit, reset}=useForm();
+    function sendEmail (event){
+        event.preventDefault();
 
-const onSubmit = async (data) =>{
-  console.log ("name=", data.name)
-  console.log("email=", data.email)
-  console.log("subject=" , data.subject)
-  console.log ("message=", data.message)
-};
+        emailjs.sendForm("service_ookie27","template_wtq1v83",event.target,"user_fKSEnKtHCs5iiz02fMa9f").then(res=>{
+            console.log(res)
+        }).catch(err=> console.log(err));
 
-return (
-  <div className='ContactForm'>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-12 text-center'>
-            <div className='contactForm'>
-              <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
-                {/* Row 1 of form */}
-                <div className='row formRow'>
-                  <div className='col-6'>
-                    <input
-                      type='text'
-                      name='name'
-                      ref={register({
-                        required: { value: true, message: 'Please enter your name' },
-                        maxLength: {
-                          value: 30,
-                          message: 'Please use 30 characters or less'
-                        }
-                      })}
-                      className='form-control formInput'
-                      placeholder='Name'
-                    ></input>
-                    {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
-                  </div>
-                  <div className='col-6'>
-                    <input
-                      type='email'
-                      name='email'
-                      ref={register({
-                        required: true,
-                        pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-                      })}
-                      className='form-control formInput'
-                      placeholder='Email address'
-                    ></input>
-                    {errors.email && (
-                      <span className='errorMessage'>Please enter a valid email address</span>
-                    )}
-                  </div>
-                </div>
-                {/* Row 2 of form */}
-                <div className='row formRow'>
-                  <div className='col'>
-                    <input
-                      type='text'
-                      name='subject'
-                      ref={register({
-                        required: { value: true, message: 'Please enter a subject' },
-                        maxLength: {
-                          value: 75,
-                          message: 'Subject cannot exceed 75 characters'
-                        }
-                      })}
-                      className='form-control formInput'
-                      placeholder='Subject'
-                    ></input>
-                    {errors.subject && (
-                      <span className='errorMessage'>{errors.subject.message}</span>
-                    )}
-                  </div>
-                </div>
-                {/* Row 3 of form */}
-                <div className='row formRow'>
-                  <div className='col'>
-                    <textarea
-                      rows={3}
-                      name='message'
-                      ref={register({
-                        required: true
-                      })}
-                      className='form-control formInput'
-                      placeholder='Message'
-                    ></textarea>
-                    {errors.message && <span className='errorMessage'>Please enter a message</span>}
-                  </div>
-                </div>
-                <button className='submit-btn' type='submit'>
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-)
+    }
+	return (
+		<div
+			className="container border"
+			style={{
+				marginTop: "50px",
+				width: "50%",
+				backgroundColor: "blueviolet",
+			}}
+            onSubmit={sendEmail}
+		>
+			<h1 style={{ marginTop: "25px" }}> Get in Touch</h1>
+			<form
+				className="row"
+				style={{ margin: "25px 85px 75px 100px" }}
+			>
+				<label>Name</label>
+				<input
+					type="text"
+					name="name"
+					className="form-control"
+				/>
 
+				<label>Email</label>
+				<input
+					type="email"
+					name="user_email"
+					className="form-control"
+				/>
+
+				<label>Message</label>
+				<textarea
+					name="message"
+					rows="4"
+					className="form-control"
+				/>
+
+				<input
+					type="submit"
+					value="send"
+					className="form-control btn btn-primary"
+					style={{ marginTop: "25px" }}
+				/>
+			</form>
+		</div>
+	)
 }
 
 export default Contact

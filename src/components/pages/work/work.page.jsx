@@ -60,30 +60,32 @@ const Work = () => {
 			{/* {Array.from({ length: 4 }).map((_, idx) => ( */}
 			{projects.map((project) => (
 				
-				<Col>
-					<Card>
-						<Card.Img variant="top" src={project.image}/>
-						
-						<Card.Body >
-							<Card.Title>{project.name}</Card.Title>
-							<Card.Text>{project.info}</Card.Text>
-							<Button id="but1"
-								href={project.deployedLink}
-								target="_blank"
-							>
-								{" "}
-								Deployed Link{" "}
-							</Button>
-							<Button id="but2"
-								href={project.repoLink}
-								target="_blank"
-							>
-								{" "}
-								Repo Link{" "}
-							</Button>
-						</Card.Body>
-					</Card>
-				</Col>
+				<div className="trail">
+					<Col>
+						<Card key={project.id}>
+							<Card.Img variant="top" src={project.image}/>
+							
+							<Card.Body >
+								<Card.Title>{project.name}</Card.Title>
+								<Card.Text>{project.info}</Card.Text>
+								<Button id="but1"
+									href={project.deployedLink}
+									target="_blank"
+								>
+									{" "}
+									Deployed Link{" "}
+								</Button>
+								<Button id="but2"
+									href={project.repoLink}
+									target="_blank"
+								>
+									{" "}
+									Repo Link{" "}
+								</Button>
+							</Card.Body>
+						</Card>
+					</Col>
+				</div>
 			))}
 		</Row>
 	)
