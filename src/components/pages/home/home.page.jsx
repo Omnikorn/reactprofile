@@ -1,9 +1,12 @@
 import React from 'react';
 import "./home.css"
+import "./script"
 
 
 
 export default function Home() {
+
+
   return (
     <React.Fragment>
       <div className="console-container">

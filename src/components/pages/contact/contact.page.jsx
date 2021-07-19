@@ -7,7 +7,7 @@ const Contact = () => {
     function sendEmail (event){
         event.preventDefault();
 
-        emailjs.sendForm("service_ookie27","template_wtq1v83",event.target,"user_fKSEnKtHCs5iiz02fMa9f").then(res=>{
+        emailjs.sendForm().then(res=>{
             console.log(res)
         }).catch(err=> console.log(err));
 
