@@ -7,11 +7,10 @@
   
   }
 
-body{
-    list-style: none;
-}  
+
 
   .title{
       font-family:pwperspectivemedium ;
-      margin-top: 10%;
+      font-size: 7rem;
+      margin-top: 5%;
   }
