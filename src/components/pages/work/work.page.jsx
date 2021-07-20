@@ -1,5 +1,5 @@
-import { useState } from "react"
-import { Card, Col, Row } from "react-bootstrap"
+import React, { useState } from "react"
+import { Card, CardGroup, Col, Row } from "react-bootstrap"
 import Button from "react-bootstrap/Button"
 import "./work.css"
 
@@ -56,38 +56,46 @@ const Work = () => {
 		}
 	])
 	return (
-		<Row xs={1} md={3} className="g-4">
-			{/* {Array.from({ length: 4 }).map((_, idx) => ( */}
-			{projects.map((project) => (
+		
+		<React.Fragment>
+			<h1>Recent Projects</h1>
+			<CardGroup>
 				
-				<div className="trail">
-					<Col>
-						<Card key={project.id}>
-							<Card.Img variant="top" src={project.image}/>
+					<Row xs={1} md={3} className="g-4">
+						{/* {Array.from({ length: 4 }).map((_, idx) => ( */}
+						{projects.map((project) => (
 							
-							<Card.Body >
-								<Card.Title>{project.name}</Card.Title>
-								<Card.Text>{project.info}</Card.Text>
-								<Button id="but1"
-									href={project.deployedLink}
-									target="_blank"
-								>
-									{" "}
-									Deployed Link{" "}
-								</Button>
-								<Button id="but2"
-									href={project.repoLink}
-									target="_blank"
-								>
-									{" "}
-									Repo Link{" "}
-								</Button>
-							</Card.Body>
-						</Card>
-					</Col>
-				</div>
-			))}
-		</Row>
+							
+								<Col>
+									<Card key={project.id}>
+										<Card.Img variant="top" src={project.image}/>
+										
+										<Card.Body >
+											<Card.Title>{project.name}</Card.Title>
+											<Card.Text>{project.info}</Card.Text>
+											<Button id="but1"
+												href={project.deployedLink}
+												target="_blank"
+											>
+												{" "}
+												Deployed Link{" "}
+											</Button>
+											<Button id="but2"
+												href={project.repoLink}
+												target="_blank"
+											>
+												{" "}
+												Repo Link{" "}
+											</Button>
+										</Card.Body>
+									</Card>
+								</Col>
+							
+						))}
+					</Row>
+				
+			</CardGroup>
+		</React.Fragment>
 	)
 }
 
