@@ -4,13 +4,16 @@ import emailjs from "emailjs-com"
 import { fontSize } from "@material-ui/system"
 const image = require("./lines.png").default
 
+const service = process.env.REACT_APP_SERVICE_ID
+const template= process.env.REACT_APP_TEMPLATE_ID
+const hero = process.env.REACT_APP_USER_ID
 
 const Contact = () => {
 
     function sendEmail (event){
         event.preventDefault();
 
-        emailjs.sendForm().then(res=>{
+        emailjs.sendForm(service,template,event.target,hero).then(res=>{
             console.log(res)
         }).catch(err=> console.log(err));
 
