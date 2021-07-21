@@ -68,7 +68,7 @@ const Work = () => {
 							
 								<Col>
 									<Card key={project.id}>
-										<Card.Img variant="top" src={project.image}/>
+										<Card.Img className="anim" variant="top" src={project.image}/>
 										
 										<Card.Body >
 											<Card.Title>{project.name}</Card.Title>

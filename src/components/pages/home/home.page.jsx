@@ -66,9 +66,14 @@ function useScript(src) {
   return status;
 }
 
+const [value, setValue] = useState()
+const refresh = () => {
+  setValue({})
+}
 
   return (
     <React.Fragment>
+      
       <div className="console-container">
 			<span id="text"></span>
 			<div className="console-underscore" id="console">
