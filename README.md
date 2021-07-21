@@ -6,11 +6,9 @@
 <p align="center">
     <img src="https://img.shields.io/github/repo-size/omnikorn/reactprofile?style=for-the-badge" alt="Repo Size" />   
     <img src="https://img.shields.io/tokei/lines/github/omnikorn/reactprofile?style=for-the-badge" alt="Total Lines" />
-    <img src="https://img.shields.io/github/package-json/dependency-version/omnikorn/reactprofile/express?style=for-the-badge" alt="Express Version" />
-    <img src="https://img.shields.io/github/package-json/dependency-version/omnikorn/reactprofile/mongoose?style=for-the-badge" alt="Mongoose Version" />
-    <img src="https://img.shields.io/github/package-json/dependency-version/omnikorn/reactprofile/morgan?style=for-the-badge" alt="Morgan Version" />
-    <img src="https://img.shields.io/github/last-commit/omnikorn/budget_tracker?style=for-the-badge" alt="Last Commit" />  
-    <img src="https://img.shields.io/github/issues/omnikorn/budget_tracker?style=for-the-badge" alt="Issues" />  
+    
+    <img src="https://img.shields.io/github/last-commit/omnikorn/reactprofile?style=for-the-badge" alt="Last Commit" />  
+    <img src="https://img.shields.io/github/issues/omnikorn/reactprofiler?style=for-the-badge" alt="Issues" />  
     <img src="https://img.shields.io/github/followers/omnikorn?style=social" alt="Followers" />  
 </p>
 
