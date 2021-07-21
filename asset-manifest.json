@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/react-profile/static/css/main.045fdbb2.chunk.css",
+    "main.js": "/react-profile/static/js/main.d806a461.chunk.js",
+    "main.js.map": "/react-profile/static/js/main.d806a461.chunk.js.map",
+    "runtime-main.js": "/react-profile/static/js/runtime-main.1eca7fc4.js",
+    "runtime-main.js.map": "/react-profile/static/js/runtime-main.1eca7fc4.js.map",
+    "static/css/2.4be38407.chunk.css": "/react-profile/static/css/2.4be38407.chunk.css",
+    "static/js/2.440da344.chunk.js": "/react-profile/static/js/2.440da344.chunk.js",
+    "static/js/2.440da344.chunk.js.map": "/react-profile/static/js/2.440da344.chunk.js.map",
+    "static/js/3.87d43a42.chunk.js": "/react-profile/static/js/3.87d43a42.chunk.js",
+    "static/js/3.87d43a42.chunk.js.map": "/react-profile/static/js/3.87d43a42.chunk.js.map",
+    "index.html": "/react-profile/index.html",
+    "static/css/2.4be38407.chunk.css.map": "/react-profile/static/css/2.4be38407.chunk.css.map",
+    "static/css/main.045fdbb2.chunk.css.map": "/react-profile/static/css/main.045fdbb2.chunk.css.map",
+    "static/js/2.440da344.chunk.js.LICENSE.txt": "/react-profile/static/js/2.440da344.chunk.js.LICENSE.txt",
+    "static/media/206728_connection_internet_linkedin_network_social_icon.png": "/react-profile/static/media/206728_connection_internet_linkedin_network_social_icon.f929feca.png",
+    "static/media/56-document-outline (1).gif": "/react-profile/static/media/56-document-outline (1).e57dbdd2.gif",
+    "static/media/AvatarMaker.png": "/react-profile/static/media/AvatarMaker.7e56515f.png",
+    "static/media/Me_Purple.jpg": "/react-profile/static/media/Me_Purple.f147cf30.jpg",
+    "static/media/budget.png": "/react-profile/static/media/budget.3bc9099f.png",
+    "static/media/cover-s.png": "/react-profile/static/media/cover-s.3b325eea.png",
+    "static/media/git1.png": "/react-profile/static/media/git1.b69c9159.png",
+    "static/media/insta.png": "/react-profile/static/media/insta.4818d742.png",
+    "static/media/lines.png": "/react-profile/static/media/lines.46cdb224.png",
+    "static/media/micro-blog.png": "/react-profile/static/media/micro-blog.6ab24316.png",
+    "static/media/about.css": "/react-profile/static/media/pwperspective-webfont.dc5c70ea.woff2",
+    "static/media/tenor.gif": "/react-profile/static/media/tenor.0d764132.gif",
+    "static/media/twitter.png": "/react-profile/static/media/twitter.a8e9c164.png",
+    "static/media/weatherapp.png": "/react-profile/static/media/weatherapp.dd0fd497.png",
+    "static/media/yummy.png": "/react-profile/static/media/yummy.f6d154cf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1eca7fc4.js",
+    "static/css/2.4be38407.chunk.css",
+    "static/js/2.440da344.chunk.js",
+    "static/css/main.045fdbb2.chunk.css",
+    "static/js/main.d806a461.chunk.js"
+  ]
+}
