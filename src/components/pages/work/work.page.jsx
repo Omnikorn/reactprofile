@@ -25,9 +25,9 @@ const Work = () => {
 		{
 			name: "The Big Day",
 			id: 3,
-			deployedLink: "underconstruction",
-			repoLink: "underconstruction",
-			image:require("./images/Me_Purple.jpg").default,
+			deployedLink: "https://thebigday.herokuapp.com/",
+			repoLink: "https://github.com/Omnikorn/Wedding_Organiser",
+			image:require("./images/wedbg1.png").default,
 			info: "This is a MERN full stack application aimed to simplify the wedding planning process. Couples can enter their wedding details including dates, venue and menu details and generate an electronic email list of their guests who will receive an email of these details. The guests can then log in to the “wedding” on our application to RSVP and confirm their menu choice.",
 		},
 		{
