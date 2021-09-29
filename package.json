@@ -20,6 +20,7 @@
     "react-hook-form": "^7.11.1",
     "react-scripts": "4.0.3",
     "react-toastify": "^7.0.4",
+    "typewriter-effect": "^2.18.2",
     "web-vitals": "^1.1.2"
   },
   "homepage": "https://omnikorn.github.io/reactprofile",
