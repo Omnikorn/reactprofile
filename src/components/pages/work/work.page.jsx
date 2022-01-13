@@ -67,7 +67,7 @@ const Work = () => {
 							
 							
 								<Col>
-									<Card key={project.id}>
+									<Card key={project.id} class="the_card">
 										<Card.Img className="anim" variant="top" src={project.image}/>
 										
 										<Card.Body >
